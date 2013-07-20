@@ -1,0 +1,20 @@
+{
+  "name": "fis-postpackager-ext-map",
+  "version": "0.0.1",
+  "description": "add content, hash properties to map.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.org/xiangshouding/fis-postpackager-ext-map"
+  },
+  "keywords": [
+    "fis",
+    "webapp",
+    "fis-webapp"
+  ],
+  "author": "xiangshouding <xiangshouding@baidu.com>",
+  "license": "MIT"
+}
