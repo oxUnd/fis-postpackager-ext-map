@@ -1,6 +1,6 @@
 {
   "name": "fis-postpackager-ext-map",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "add content, hash properties to map.json",
   "main": "index.js",
   "scripts": {
