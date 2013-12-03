@@ -42,12 +42,15 @@ module.exports = function(ret, conf, settings, opt) {
         info['hash'] = fis.util.md5(id, 7);
     });
 
+
     //create map.json
     var map = fis.file(root, (ns ? ns + '-' : '') + 'map.json');
     map.useHash = false;
     map.setContent(JSON.stringify(ret.map), null, opt.optimize ? null : 4);
     ret.pkg[map.subpath] = map;
-
-    allRet = ret;
-    genData(opt);
+    //create data.json
+    if (settings['create'] && settings['create'].indexOf('data.json') != -1) {
+        allRet = ret;
+        genData(opt);
+    }
 };
